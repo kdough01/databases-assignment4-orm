@@ -21,8 +21,11 @@ I wanted to keep these tests as basic as possible, so we have the five tests spe
 
 # To run the code with CLI:
 python sync.py --source "mysql+pymysql://root:password@localhost/sakila" init
+
 python sync.py --source "mysql+pymysql://root:password@localhost/sakila" full-load
+
 python sync.py --source "mysql+pymysql://root:password@localhost/sakila" incremental
+
 python sync.py --source "mysql+pymysql://root:password@localhost/sakila" validate
 
 # Example output in terminal:
